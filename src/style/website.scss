@@ -1,0 +1,214 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+.i-home__page {
+  position: relative;
+  .el-menu {
+    .i-html__container {
+      width: 57%;
+      flex: 1;
+      line-height: 55px;
+      font-weight: bold;
+      z-index: 2022;
+    }
+    .el-menu-item {
+      color: #777;
+      z-index: 2022;
+    }
+  }
+  .i-grid__container {
+    scroll-snap-align: start;
+    padding-top: 50px;
+    background: white;
+  }
+  .i-header__container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 2022;
+  }
+  .i-home__main {
+    margin-top: 60px;
+  }
+  .el-card__header {
+    .i-image__container {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    }
+  }
+  .i-card__footer {
+    text-align: center;
+  }
+}
+.el-carousel__container {
+  height: 460px;
+  scroll-snap-align: start;
+  .i-html__container {
+    width: 100%;
+    height: 100%;
+    line-height: calc(100vh - 70px);
+    text-align: center;
+  }
+}
+.i-home__card__title {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.i-home__card__content {
+  width: 100%;
+  height: 45px;
+  text-align: center;
+}
+.i-home__thanks {
+  width: 100%;
+  padding: 120px 0 20px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+.i-home__thanks__images {
+  .i-wrapper__container__body {
+    padding: 0 130px 40px 130px;
+    text-align: center;
+    .i-image__container {
+      display: inline;
+    }
+    .el-image {
+      width: auto;
+      height: 4rem;
+      margin: 1rem;
+    }
+  }
+}
+.i-home__footer {
+  height: 280px;
+  margin-top: 80px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  background-color: #000;
+  .i-html__container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .i-component__fragment {
+    display: block;
+  }
+  .i-component__fragment + .i-component__fragment {
+    margin-left: 0;
+  }
+}
+.i-home__ball {
+  &:nth-of-type(4n + 1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 0;
+    min-width: 100px;
+    min-height: 100px;
+    padding-bottom: 15%;
+    border-radius: 100%;
+    animation: v-ball-updown 5s 0s infinite alternate;
+    background: radial-gradient(dodgerblue, white);
+  }
+  &:nth-of-type(4n + 2) {
+    top: -100px;
+    left: 150px;
+    width: 25%;
+    padding-bottom: 25%;
+    height: 0;
+    min-width: 100px;
+    min-height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    animation: v-ball-updown 5s 0s infinite alternate;
+    background: radial-gradient(dodgerblue, white);
+  }
+  &:nth-of-type(4n + 3) {
+    top: 200px;
+    right: 200px;
+    width: 5%;
+    padding-bottom: 5%;
+    height: 0;
+    min-width: 100px;
+    min-height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    animation: v-ball-updown 5s 0s infinite alternate;
+    background: radial-gradient(dodgerblue, white);
+  }
+  &:nth-of-type(4n + 4) {
+    top: 400px;
+    width: 100%;
+    height: 200px;
+    min-width: 100px;
+    min-height: 100px;
+    position: absolute;
+    border-radius: 100%;
+    animation: v-ball-updown 5s 0s infinite alternate;
+    background: radial-gradient(dodgerblue, white);
+  }
+}
+@keyframes v-ball-updown {
+  0% {
+    transform: translate3d(0, -5%, 0);
+  }
+  100% {
+    transform: translate3d(0, 3%, 0);
+  }
+}
+@keyframes left-top {
+  0% {
+    transform: translate(-100px, -100px) scale(3, 3)
+  }
+  1% {
+    transform: translate(-100px, -100px) scale(3, 3)
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1, 1)
+  }
+}
+@keyframes right-top {
+  0% {
+    transform: translate(100px, -200px) scale(3, 3)
+  }
+  1% {
+    transform: translate(100px, -200px) scale(3, 3)
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1, 1)
+  }
+}
+@keyframes right {
+  0% {
+    transform: translate(100px, 0px)
+  }
+  1% {
+    transform: translate(100px, 0px)
+  }
+  100% {
+    transform: translate(0px, 0px)
+  }
+}
+@keyframes left {
+  0% {
+    transform: translate(-100px, 0px)
+  }
+  1% {
+    transform: translate(-100px, 0px)
+  }
+  100% {
+    transform: translate(0px, 0px)
+  }
+}
