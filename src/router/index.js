@@ -1,10 +1,12 @@
 import {createRouter, createWebHashHistory,} from 'vue-router';
+import { ElLoading } from 'element-plus';
 import {Schema} from '../../../i-renderer/packages';
 import frameSchema from '../data/frame';
 import homeSchema from '../data/home';
 import logSchema from '../data/log';
 
-export default createRouter({
+let routerMask;
+const router = createRouter({
   history: process.env.NODE_ENV === 'dev'? createWebHashHistory(): createWebHashHistory(),
   routes: [
     {
@@ -54,3 +56,23 @@ export default createRouter({
     return { x: 0, y: 0 };
   }
 });
+
+router.beforeEach((to, from, next) => {
+  if (to.path !== from.path) {
+    routerMask = ElLoading.service({
+      fullscreen: true,
+      customClass: 'i-website__router__loader'
+    });
+  }
+  next();
+});
+
+router.afterEach(() => {
+  const timer = setTimeout(() => {
+    if (routerMask && typeof routerMask.close === 'function') {
+      routerMask.close();
+      clearTimeout(timer);
+    }
+  }, 1000);
+});
+export default router;

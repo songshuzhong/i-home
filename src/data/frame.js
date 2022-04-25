@@ -60,7 +60,8 @@ export default {
                 name: 'https://songshuzhong.github.io/visualizer/views/resume.html',
                 title: '关于我',
                 renderer: 'menuitem',
-                icon: 'Avatar'
+                icon: 'Avatar',
+                extra: true
               }
             ]
           }

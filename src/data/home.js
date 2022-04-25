@@ -194,6 +194,14 @@ export default {
             },
             {
               renderer: 'image',
+              src: 'https://songshuzhong.github.io/i-assets/public/img/react.svg'
+            },
+            {
+              renderer: 'image',
+              src: 'https://songshuzhong.github.io/i-assets/public/img/vue.svg'
+            },
+            {
+              renderer: 'image',
               src: 'https://songshuzhong.github.io/visualizer/static/img/jQuery.png'
             },
             {
