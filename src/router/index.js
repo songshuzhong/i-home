@@ -2,13 +2,14 @@ import {createRouter, createWebHashHistory,} from 'vue-router';
 import {Schema} from '../../../i-renderer/packages';
 import frameSchema from '../data/frame';
 import homeSchema from '../data/home';
+import logSchema from '../data/log';
 
 export default createRouter({
   history: process.env.NODE_ENV === 'dev'? createWebHashHistory(): createWebHashHistory(),
   routes: [
     {
       path: '/',
-      name: 'IWebsite',
+      name: 'IHome',
       component: Schema,
       props: {
         initSchema: frameSchema,
@@ -21,6 +22,8 @@ export default createRouter({
           path: '/',
           component: Schema,
           props: {
+            url: '/',
+            canSchemaUpdate: false,
             initSchema: homeSchema
           },
         },
@@ -28,7 +31,9 @@ export default createRouter({
           path: '/logs',
           component: Schema,
           props: {
-            initSchema: homeSchema
+            url: '/logs',
+            canSchemaUpdate: false,
+            initSchema: logSchema
           },
         },
         {

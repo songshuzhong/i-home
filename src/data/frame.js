@@ -16,28 +16,39 @@ export default {
             ellipsis: false,
             defaultActive: '',
             title: {
-              renderer: 'html',
+              renderer: 'wrapper',
               classname: '',
-              html: 'IRender'
+              body: [
+                {
+                  renderer: 'image',
+                  src: 'https://songshuzhong.github.io/visualizer/static/img/favicon.png'
+                },
+                {
+                  renderer: 'html',
+                  classname: '',
+                  html: 'IRender'
+                }
+              ]
             },
             body: [
               {
-                name: 'website',
-                title: '组件示例',
+                name: '/',
+                title: '首页',
                 renderer: 'menuitem',
-                icon: 'DataBoard'
+                icon: 'HomeFilled'
               },
               {
-                name: 'website',
+                name: 'https://songshuzhong.github.io/i-website/dist/index.html',
+                title: '组件示例',
+                renderer: 'menuitem',
+                icon: 'DataBoard',
+                extra: true
+              },
+              {
+                name: 'logs',
                 title: '更新日志',
                 renderer: 'menuitem',
                 icon: 'Tickets'
-              },
-              {
-                name: 'website',
-                title: '项目地址',
-                renderer: 'menuitem',
-                icon: 'AddLocation'
               },
               {
                 name: 'website',
@@ -46,7 +57,7 @@ export default {
                 icon: 'Aim'
               },
               {
-                name: 'website',
+                name: 'https://songshuzhong.github.io/visualizer/views/resume.html',
                 title: '关于我',
                 renderer: 'menuitem',
                 icon: 'Avatar'
@@ -60,79 +71,6 @@ export default {
         routerView: true,
         iProtal: true,
         classname: 'i-home__main'
-      },
-      {
-        renderer: 'footer',
-        classname: 'i-home__footer',
-        body: [
-          {
-            renderer: 'wrapper',
-            body: [
-              {
-                renderer: 'html',
-                html: '链接'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: '代码仓库'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: '更新日志'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: '设计理念'
-              }
-            ]
-          },
-          {
-            renderer: 'wrapper',
-            body: [
-              {
-                renderer: 'html',
-                html: '相关'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: 'react'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: 'vue'
-              }
-            ]
-          },
-          {
-            renderer: 'wrapper',
-            body: [
-              {
-                renderer: 'html',
-                html: '联系'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: 'qq: 1462026137'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: 'phone: 15510351839'
-              },
-              {
-                renderer: 'action',
-                type: 'text',
-                text: 'e-mail: sshuzhong@outlook.com'
-              }
-            ]
-          }
-        ]
       }
     ]
   }
