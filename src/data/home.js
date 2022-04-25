@@ -182,51 +182,51 @@ export default {
           body: [
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/html5.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/html5.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/css3.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/css3.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/js.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/js.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/i-assets/public/img/react.svg'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/react.svg'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/i-assets/public/img/vue.svg'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/vue.svg'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/jQuery.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/jQuery.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/koa.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/koa.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/bootstrap.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/bootstrap.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/node.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/node.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/npm.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/npm.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/sequelize.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/sequelize.png'
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/visualizer/static/img/mock.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/mock.png'
             }
           ]
         }
