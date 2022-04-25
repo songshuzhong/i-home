@@ -20,6 +20,8 @@ export default {
         {
           renderer: 'carousel',
           classname: 'i-home__carousel',
+          autoplay: true,
+          loop: true,
           body: [
             {
               renderer: 'wrapper',
@@ -32,7 +34,8 @@ export default {
                 {
                   renderer: 'action',
                   text: '了解详情',
-                  actionType: 'link'
+                  actionType: 'url',
+                  url: 'https://songshuzhong.github.io/i-website/dist/index.html'
                 }
               ]
             },
@@ -47,7 +50,8 @@ export default {
                 {
                   renderer: 'action',
                   text: '了解详情',
-                  actionType: 'link'
+                  actionType: 'url',
+                  url: 'https://songshuzhong.github.io/i-website/dist/index.html'
                 }
               ]
             },
@@ -62,7 +66,8 @@ export default {
                 {
                   renderer: 'action',
                   text: '了解详情',
-                  actionType: 'link'
+                  actionType: 'url',
+                  url: 'https://songshuzhong.github.io/i-website/dist/index.html'
                 }
               ]
             }
@@ -94,7 +99,9 @@ export default {
               footer: {
                 renderer: 'action',
                 type: 'text',
-                text: '可视化'
+                text: '快速了解',
+                actionType: 'url',
+                url: 'https://songshuzhong.github.io/i-website/dist/index.html'
               }
             },
             {
@@ -118,7 +125,9 @@ export default {
               footer: {
                 renderer: 'action',
                 type: 'text',
-                text: '一次拖拽流程图'
+                text: '快速了解',
+                actionType: 'url',
+                url: 'https://songshuzhong.github.io/i-website/dist/index.html'
               }
             },
             {
@@ -142,7 +151,9 @@ export default {
               footer: {
                 renderer: 'action',
                 type: 'text',
-                text: '控件分类与规则'
+                text: '快速了解',
+                actionType: 'url',
+                url: 'https://songshuzhong.github.io/i-website/dist/index.html'
               }
             },
             {
@@ -166,7 +177,9 @@ export default {
               footer: {
                 renderer: 'action',
                 type: 'text',
-                text: '了解详情'
+                text: '快速了解',
+                actionType: 'url',
+                url: 'https://songshuzhong.github.io/i-website/dist/index.html'
               }
             }
           ]
@@ -229,6 +242,21 @@ export default {
               src: 'https://songshuzhong.github.io/i-assets/public/logo/mock.png'
             }
           ]
+        },
+        {
+          renderer: 'wrapper',
+          classname: 'i-home__sponsor',
+          body: [
+            {
+              renderer: 'html',
+              html: '赞助'
+            },
+            {
+              renderer: 'image',
+              classname: 'i-home__me',
+              src: 'https://songshuzhong.github.io/i-assets/public/img/charge.png'
+            }
+          ]
         }
       ]
     },
@@ -246,17 +274,23 @@ export default {
             {
               renderer: 'action',
               type: 'text',
-              text: '代码仓库'
+              text: '代码仓库',
+              actionType: 'url',
+              url: 'https://songshuzhong.github.io/i-website/dist/index.html'
             },
             {
               renderer: 'action',
               type: 'text',
-              text: '更新日志'
+              text: '更新日志',
+              actionType: 'url',
+              url: 'https://songshuzhong.github.io/i-website/dist/index.html'
             },
             {
               renderer: 'action',
               type: 'text',
-              text: '设计理念'
+              text: '设计理念',
+              actionType: 'url',
+              url: 'https://songshuzhong.github.io/i-website/dist/index.html'
             }
           ]
         },
@@ -270,12 +304,16 @@ export default {
             {
               renderer: 'action',
               type: 'text',
-              text: 'react'
+              text: 'react',
+              actionType: 'url',
+              url: 'https://songshuzhong.github.io/i-website/dist/index.html'
             },
             {
               renderer: 'action',
               type: 'text',
-              text: 'vue'
+              text: 'vue',
+              actionType: 'url',
+              url: 'https://songshuzhong.github.io/i-website/dist/index.html'
             }
           ]
         },
@@ -289,17 +327,20 @@ export default {
             {
               renderer: 'action',
               type: 'text',
-              text: 'qq: 1462026137'
+              text: 'qq: 1462026137',
+              actionType: 'static'
             },
             {
               renderer: 'action',
               type: 'text',
-              text: 'phone: 15510351839'
+              text: 'phone: 15510351839',
+              actionType: 'static'
             },
             {
               renderer: 'action',
               type: 'text',
-              text: 'e-mail: sshuzhong@outlook.com'
+              text: 'e-mail: sshuzhong@outlook.com',
+              actionType: 'static'
             }
           ]
         }

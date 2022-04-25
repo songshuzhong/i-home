@@ -1,6 +1,7 @@
 .i-home__page {
   position: relative;
   .el-menu {
+    border: 0;
     .i-wrapper__container {
       flex: 1;
     }
@@ -26,6 +27,9 @@
     padding: 50px 150px;
     background: white;
   }
+  .i-main__container {
+    padding: 0;
+  }
   .i-header__container {
     position: fixed;
     top: 0;
@@ -47,6 +51,7 @@
   .i-card__footer {
     padding: 8px 20px;
     text-align: center;
+    cursor: pointer;
     &:hover {
       background: linear-gradient(to right, #a1b6f6, #436eee);
       .el-button {
@@ -60,6 +65,7 @@
 }
 .el-carousel__container {
   height: 460px;
+  background: linear-gradient(to bottom, white, rgba(#a1b6f6, 0.7));
   .i-wrapper__container__body {
     position: relative;
     padding: 0 160px;
@@ -69,6 +75,7 @@
       bottom: 120px;
       right: 160px;
       display: block;
+      font-size: 18px;
     }
     .i-component__fragment {
       position: absolute;
@@ -118,12 +125,18 @@
   height: 45px;
   text-align: center;
 }
-.i-home__thanks {
+.i-home__thanks,
+.i-home__sponsor {
   width: 100%;
   padding: 120px 0 20px 0;
   text-align: center;
   font-size: 30px;
   font-weight: 500;
+  .i-home__me {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+  }
 }
 .i-home__thanks__images {
   .i-wrapper__container__body {
@@ -162,6 +175,7 @@
   }
 }
 .i-home__ball {
+  z-index: 22;
   &:nth-of-type(4n + 1) {
     position: absolute;
     top: 0;
@@ -177,7 +191,7 @@
   }
   &:nth-of-type(4n + 2) {
     top: -100px;
-    left: 150px;
+    right: 150px;
     width: 20%;
     padding-bottom: 20%;
     height: 0;
@@ -247,6 +261,6 @@
     transform: translate3d(0, -5%, 0) scale(1);
   }
   100% {
-    transform: translate3d(0, 3%, 0) scale(0.9);
+    transform: translate3d(0, 3%, 0) scale(0.8);
   }
 }
