@@ -21,7 +21,7 @@ export default {
               body: [
                 {
                   renderer: 'image',
-                  src: 'https://songshuzhong.github.io/visualizer/static/img/favicon.png'
+                  src: 'https://songshuzhong.github.io/i-assets/public/logo/favicon.png'
                 },
                 {
                   renderer: 'html',
