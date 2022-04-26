@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/i-home/dist/chunk/monaco-editor.1d4a82.js"
   },
   {
-    "revision": "9901d56e5b63f7a9fc6e",
+    "revision": "3f9ca793a9ae8e72496d",
     "url": "/i-home/dist/css/app.d765db18.css"
   },
   {
@@ -32,12 +32,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/i-home/dist/fonts/codicon.805fb6ad.ttf"
   },
   {
-    "revision": "8d4349e64f93a53505795e3ed65deacd",
+    "revision": "4cbde4b53795edec4fbcbd00bd369690",
     "url": "/i-home/dist/index.html"
   },
   {
-    "revision": "9901d56e5b63f7a9fc6e",
-    "url": "/i-home/dist/js/app.a546fb.js"
+    "revision": "3f9ca793a9ae8e72496d",
+    "url": "/i-home/dist/js/app.9d7522.js"
   },
   {
     "revision": "ce9bbdf78b2c215adf3c80bc4534ce4c",
