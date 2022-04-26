@@ -215,7 +215,11 @@ export default {
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/i-assets/public/logo/jQuery.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/element-plus.png'
+            },
+            {
+              renderer: 'image',
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/svgs.png'
             },
             {
               renderer: 'image',
