@@ -82,18 +82,18 @@ export default {
               renderer: 'card',
               header: {
                 renderer: 'image',
-                src: 'https://songshuzhong.github.io/i-assets/public/img/report.png'
+                src: 'https://songshuzhong.github.io/i-assets/public/img/jigsaw.png'
               },
               body: [
                 {
                   renderer: 'html',
                   classname: 'i-home__card__title',
-                  html: '可视化'
+                  html: '健壮易扩展'
                 },
                 {
                   renderer: 'html',
                   classname: 'i-home__card__content',
-                  html: '所见即所得，随意拖动鼠标即可让编码有图可依。'
+                  html: '兼容自定义组件、接口适配、样式适配。'
                 }
               ],
               footer: {
@@ -108,7 +108,7 @@ export default {
               renderer: 'card',
               header: {
                 renderer: 'image',
-                src: 'https://songshuzhong.github.io/i-assets/public/img/monitor.png'
+                src: 'https://songshuzhong.github.io/i-assets/public/img/rocket.png'
               },
               body: [
                 {
@@ -119,7 +119,7 @@ export default {
                 {
                   renderer: 'html',
                   classname: 'i-home__card__content',
-                  html: '争夺每一秒，让你节省出编码的时间用在喝咖啡上。'
+                  html: '几近零代码，拒绝repeat，把节省出的时间用在喝咖啡上。'
                 }
               ],
               footer: {
@@ -134,7 +134,33 @@ export default {
               renderer: 'card',
               header: {
                 renderer: 'image',
-                src: 'https://songshuzhong.github.io/i-assets/public/img/note.png'
+                src: 'https://songshuzhong.github.io/i-assets/public/img/bar.png'
+              },
+              body: [
+                {
+                  renderer: 'html',
+                  classname: 'i-home__card__title',
+                  html: '可视化'
+                },
+                {
+                  renderer: 'html',
+                  classname: 'i-home__card__content',
+                  html: '可视化编辑器，简单点击鼠标即可完成页面搭建。'
+                }
+              ],
+              footer: {
+                renderer: 'action',
+                type: 'text',
+                text: '快速了解',
+                actionType: 'url',
+                url: 'https://songshuzhong.github.io/i-website/dist/index.html'
+              }
+            },
+            {
+              renderer: 'card',
+              header: {
+                renderer: 'image',
+                src: 'https://songshuzhong.github.io/i-assets/public/img/friendly.png'
               },
               body: [
                 {
@@ -145,33 +171,7 @@ export default {
                 {
                   renderer: 'html',
                   classname: 'i-home__card__content',
-                  html: '人性化交互，可重复性编辑，让你爱不释手。'
-                }
-              ],
-              footer: {
-                renderer: 'action',
-                type: 'text',
-                text: '快速了解',
-                actionType: 'url',
-                url: 'https://songshuzhong.github.io/i-website/dist/index.html'
-              }
-            },
-            {
-              renderer: 'card',
-              header: {
-                renderer: 'image',
-                src: 'https://songshuzhong.github.io/i-assets/public/img/cpu.png'
-              },
-              body: [
-                {
-                  renderer: 'html',
-                  classname: 'i-home__card__title',
-                  html: '简单易学'
-                },
-                {
-                  renderer: 'html',
-                  classname: 'i-home__card__content',
-                  html: '降低学习成本，让每个人享受开发的乐趣。'
+                  html: '人性化交互，编辑器自带文档注释，零成本上手。'
                 }
               ],
               footer: {
@@ -310,14 +310,14 @@ export default {
               type: 'text',
               text: 'react',
               actionType: 'url',
-              url: 'https://songshuzhong.github.io/i-website/dist/index.html'
+              url: 'https://react.docschina.org/'
             },
             {
               renderer: 'action',
               type: 'text',
               text: 'vue',
               actionType: 'url',
-              url: 'https://songshuzhong.github.io/i-website/dist/index.html'
+              url: 'https://cn.vuejs.org/index.html'
             }
           ]
         },
@@ -332,19 +332,21 @@ export default {
               renderer: 'action',
               type: 'text',
               text: 'qq: 1462026137',
-              actionType: 'static'
+              actionType: 'copy',
+              content: '1462026137'
             },
             {
               renderer: 'action',
               type: 'text',
               text: 'phone: 15510351839',
-              actionType: 'static'
+              actionType: 'copy',
+              content: '15510351839'
             },
             {
               renderer: 'action',
               type: 'text',
               text: 'e-mail: sshuzhong@outlook.com',
-              actionType: 'static'
+              actionType: 'mail'
             }
           ]
         }

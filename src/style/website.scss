@@ -16,11 +16,11 @@
     .i-html__container {
       line-height: 55px;
       font-weight: bold;
-      z-index: 2022;
+      z-index: 10;
     }
     .el-menu-item {
       color: #777;
-      z-index: 2022;
+      z-index: 10;
     }
   }
   .i-grid__container {
@@ -35,7 +35,7 @@
     top: 0;
     width: 100%;
     background: white;
-    z-index: 2022;
+    z-index: 10;
   }
   .i-home__main {
     margin-top: 60px;
@@ -43,9 +43,10 @@
   }
   .el-card__header {
     .i-image__container {
-      width: 70px;
-      height: 70px;
+      width: 90px;
+      height: 90px;
       margin: auto;
+      border-radius: 100%;
     }
   }
   .i-card__footer {
@@ -114,15 +115,35 @@
     }
   }
 }
+.el-card {
+  &:hover {
+    cursor: pointer;
+    .el-card__header {
+      .i-image__container {
+        width: 90px;
+        height: 90px;
+        margin: auto;
+        border-radius: 100%;
+        background: #a1b6f6;
+        animation: fillbgcolor 0.5s ease-in;
+      }
+    }
+  }
+}
 .i-home__card__title {
   width: 100%;
-  padding: 20px 0;
+  padding: 10px 0 20px 0;
   text-align: center;
   font-size: 18px;
 }
 .i-home__card__content {
   width: 100%;
   height: 45px;
+  font-size: 16px;
+  margin: 10px 0 20px 0;
+  padding: 0 25px;
+  color: #99a9bf;
+  line-height: 20px;
   text-align: center;
 }
 .i-home__thanks,
@@ -175,7 +196,7 @@
   }
 }
 .i-home__ball {
-  z-index: 22;
+  z-index: 2;
   &:nth-of-type(4n + 1) {
     position: absolute;
     top: 0;
@@ -233,7 +254,7 @@
 
 .i-website__router__loader {
   height: 3px;
-  z-index: 2023 !important;
+  z-index: 20 !important;
   &::before {
     content: "";
     display: block;
@@ -255,7 +276,14 @@
     transform: scaleX(1);
   }
 }
-
+@keyframes fillbgcolor {
+  from {
+    background: white;
+  }
+  to {
+    background: #a1b6f6;
+  }
+}
 @keyframes i-home-ball-updown {
   0% {
     transform: translate3d(0, -5%, 0) scale(1);
