@@ -215,7 +215,7 @@ export default {
             },
             {
               renderer: 'image',
-              src: 'https://songshuzhong.github.io/i-assets/public/logo/element-plus.png'
+              src: 'https://songshuzhong.github.io/i-assets/public/logo/element-plus.svg'
             },
             {
               renderer: 'image',
