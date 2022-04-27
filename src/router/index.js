@@ -2,8 +2,6 @@ import {createRouter, createWebHashHistory,} from 'vue-router';
 import { ElLoading } from 'element-plus';
 import {Schema} from '../../../i-renderer/packages';
 import frameSchema from '../data/frame';
-import homeSchema from '../data/home';
-import logSchema from '../data/log';
 
 let routerMask;
 const router = createRouter({
@@ -24,25 +22,21 @@ const router = createRouter({
           path: '/',
           component: Schema,
           props: {
-            url: '/',
-            canSchemaUpdate: false,
-            initSchema: homeSchema
+            url: 'https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/page/home',
           },
         },
         {
           path: '/logs',
           component: Schema,
           props: {
-            url: '/logs',
-            canSchemaUpdate: false,
-            initSchema: logSchema
+            url: 'https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/page/logs',
           },
         },
         {
           path: '/quality',
           component: Schema,
           props: {
-            initSchema: homeSchema
+            url: 'https://www.fastmock.site/mock/a93e0b29161761b8153cbc02db04c643/api/page/qualification',
           },
         }
       ]
