@@ -57,7 +57,7 @@ export default {
                 icon: 'Aim'
               },
               {
-                name: 'https://songshuzhong.github.io/visualizer/views/resume.html',
+                name: 'https://songshuzhong.github.io/i-home/resume.html',
                 title: '关于我',
                 renderer: 'menuitem',
                 icon: 'Avatar',
