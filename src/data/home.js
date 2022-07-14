@@ -190,7 +190,7 @@ export default {
           html: 'Thank You!'
         },
         {
-          renderer: 'grid',
+          renderer: 'wrapper',
           classname: 'i-home__thanks__images',
           body: [
             {
