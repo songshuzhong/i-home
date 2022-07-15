@@ -1,3 +1,6 @@
+.i-renderer-website-schema__container {
+  background: white;
+}
 .i-home__page {
   position: relative;
   .el-menu {
@@ -254,6 +257,36 @@
 }
 .i-home__logs {
   padding: 20px;
+}
+
+.i-home__me {
+  position: relative;
+  width: 1050px;
+  margin: auto;
+  background: white;
+  .i-home__me__aside,
+  .i-home__me__main {
+    padding: 20px;
+    border-right: 4px solid white;
+    background-color: whitesmoke;
+  }
+  .el-divider__text {
+    font-weight: 500;
+    color: #607d8b;
+    line-height: 1.5;
+  }
+  .i-home__me__main__subTitle {
+    padding: 0 10px;
+    font-weight: 500;
+    color: #607d8b;
+    line-height: 1.5;
+  }
+  .i-home__me__main__desc {
+    padding-left: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #606266;
+  }
 }
 
 .i-website__router__loader {

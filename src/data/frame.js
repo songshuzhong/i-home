@@ -51,13 +51,13 @@ export default {
                 icon: 'Tickets'
               },
               {
-                name: 'website',
+                name: 'quality',
                 title: '荣誉资质',
                 renderer: 'menuitem',
                 icon: 'Aim'
               },
               {
-                name: 'https://songshuzhong.github.io/i-home/resume.html',
+                name: 'me',
                 title: '关于我',
                 renderer: 'menuitem',
                 icon: 'Avatar',
