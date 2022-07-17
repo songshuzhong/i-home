@@ -41,7 +41,8 @@
     width: 100%;
     z-index: 10;
     backdrop-filter: saturate(50%) blur(4px);
-    background: transparent;
+    background-image: radial-gradient(transparent 1px,#ffffff 1px) !important;
+    background-size: 4px 4px;
   }
   .i-home__main {
     margin-top: 60px;
@@ -255,6 +256,7 @@
     background: radial-gradient(#436eee, white);
   }
 }
+
 .i-home__logs {
   padding: 20px;
 }
